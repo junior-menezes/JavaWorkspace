@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 import util.CotacaoDolar;
 
-//tentar criar um app que calcula a cotação do dolar + IOF
+//tentar criar um app que calcula a cotaï¿½ï¿½o do dolar + IOF
 public class CotacaoEmDolar {
 
 	public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class CotacaoEmDolar {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Cotação em dolar");
+		System.out.println("Cotaï¿½ï¿½o em dolar");
 		System.out.println("Digite o valor do Dolar em Reais: ");
 		double valorD = sc.nextDouble();
 		
@@ -21,6 +21,8 @@ public class CotacaoEmDolar {
 		double quantD = sc.nextDouble();
 		
 		System.out.printf("Total com IOF: %.2f", CotacaoDolar.Cotacao(valorD, quantD));
+		System.out.println();
+		System.out.printf("IOF: %.2f", CotacaoDolar.IOF);
 	}
 
 }
